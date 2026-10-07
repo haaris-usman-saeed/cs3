@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Learn logistic regression through the lecture's penguin examples, interactive experiments, and practice with explanations.">
+  <title>Logistic Lab · Learn by understanding</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to lesson</a>
+  <button id="menu" class="mobile-menu" aria-label="Open lesson navigation" aria-expanded="false">☰ Lessons</button>
+  <aside id="sidebar" aria-label="Course navigation">
+    <a class="brand" href="#welcome"><span class="brand-icon">σ</span><span>Logistic Lab<small>FROM SCORE TO UNDERSTANDING</small></span></a>
+    <p class="sidebar-label">YOUR LEARNING PATH</p>
+    <nav id="chapters" aria-label="Chapters"></nav>
+    <div class="sidebar-tools"><a href="#formulas">Formula field guide</a><a href="#lecture-map">Original lecture map</a></div>
+    <div class="progress"><div class="progress-label"><span>Your checkpoints</span><strong id="progress-count">0 / 10</strong></div><div class="progress-track"><span id="progress-bar"></span></div><p>Mark a lesson when you can explain it without looking.</p></div>
+  </aside>
+  <div id="shell">
+    <header class="topbar"><span>COSC 3 · Logistic regression</span><div><button id="source-open" class="text-button">View lecture</button><button id="print" class="text-button">Print / save lesson</button></div></header>
+    <main id="main" tabindex="-1"></main>
+    <footer>Built from your 68-slide lecture. Added examples are labeled. Progress stays in this browser. <button id="reset-progress" class="text-button">Reset progress</button></footer>
+  </div>
+  <dialog id="source-dialog" aria-labelledby="source-heading">
+    <div class="dialog-header"><h2 id="source-heading">Original lecture</h2><button id="source-close" aria-label="Close lecture viewer">✕</button></div>
+    <div class="source-toolbar"><button id="source-prev" aria-label="Previous slide">←</button><label>Slide <input id="source-page" type="number" min="1" max="68" value="1"></label><span>of 68</span><button id="source-next" aria-label="Next slide">→</button><a href="assets/lecture.pdf" id="source-pdf" target="_blank" rel="noopener">Open PDF</a></div>
+    <img id="source-image" src="assets/slides/01.jpg" alt="Original lecture slide 1">
+    <p id="source-caption"></p>
+  </dialog>
+  <script src="data/penguins.js"></script>
+  <script src="math.js"></script>
+  <script src="content.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
